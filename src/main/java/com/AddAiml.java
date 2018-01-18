@@ -1,4 +1,4 @@
-package com;
+package main.java.com;
 
 import java.io.File;
 
@@ -30,7 +30,7 @@ public class AddAiml {
 		File currDir = new File(".");
 		String path = currDir.getAbsolutePath();
 		path = path.substring(0, path.length() - 2);
-		System.out.println(path);
+		System.out.println("File path found" +path);
 		String resourcesPath = path + File.separator + "src" + File.separator + "main" + File.separator + "resources";
 		return resourcesPath;
 	}
